@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Google ML Kit Demo App'),
+        title: const Text('demo app pengenalan serangga '),
         centerTitle: true,
         elevation: 0,
       ),
@@ -41,9 +41,9 @@ class Home extends StatelessWidget {
               child: Column(
                 children: [
                   ExpansionTile(
-                    title: const Text('Vision APIs'),
+                    title: const Text('klik untuk diteksi serangga'),
                     children: [
-                      CustomCard('Image Labeling', ImageLabelView()),
+                      CustomCard('image classification', ImageLabelView()),
                       CustomCard('Object detection', ObjectDetectorView()),
                     ],
                   ),
